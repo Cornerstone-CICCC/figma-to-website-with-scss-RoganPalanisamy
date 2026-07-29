@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ======================
+   HERO
+====================== */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.hero .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+.hero .navbar .logo {
+  width: 100px;
+}
+.hero .navbar .logo img {
+  width: 100%;
+}
+.hero .navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin: 0;
+  padding: 0;
+}
+.hero .navbar ul li a {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.hero .hero-title {
+  width: min(650px, 70%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero .hero-title img {
+  width: 100%;
+}
+.hero .socials {
+  position: absolute;
+  left: 35px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.hero .socials span {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #111;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.hero .scroll-text {
+  position: absolute;
+  right: 16px;
+  bottom: 45px;
+  writing-mode: vertical-rl;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* ======================
+   FULL FIGMA SECTIONS
+====================== */
+.image-section {
+  width: 100%;
+  overflow: hidden;
+}
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ======================
+   CAREER PLACEHOLDER
+====================== */
+.career-placeholder {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+.career-placeholder h2 {
+  font-size: 50px;
+}
+.career-placeholder h2 span {
+  background: #3498e8;
+  color: #fff;
+  padding: 3px 8px;
+}
+.career-placeholder p {
+  font-size: 20px;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+  background: #3f3f3f;
+  color: #fff;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+footer h2 {
+  font-size: 38px;
+  margin-top: 0;
+}
+footer h3 {
+  font-size: 22px;
+}
+footer p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 800px) {
+  .hero .navbar {
+    padding: 20px;
+  }
+  .hero .navbar ul {
+    gap: 15px;
+  }
+  .hero .navbar ul li a {
+    font-size: 12px;
+  }
+  .hero .hero-title {
+    width: 80%;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 550px) {
+  .hero .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero .socials {
+    left: 15px;
+  }
+  .career-placeholder {
+    padding: 40px 25px;
+  }
+  .career-placeholder h2 {
+    font-size: 36px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
